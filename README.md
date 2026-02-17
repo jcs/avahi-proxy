@@ -1,10 +1,10 @@
 # avahi-proxy
 
-Act as a DNS server listening on a given port (and optional IP, otherwise
-defaulting to `127.0.0.1`) and pass each `A` and `AAAA` query received for the
-`local` domain to `avahi-resolve`.
-If it gets an answer, pass it back as a proper DNS reply, otherwise return
-`NXDOMAIN`.
+This acts as a DNS server listening on a given port (and optional IP, otherwise
+defaulting to `127.0.0.1`) and passes each `A` and `AAAA` query received for
+the `local` domain to `avahi-resolve`.
+If it gets an answer, it passes it back as a proper DNS reply, otherwise
+returning `NXDOMAIN`.
 
 ## Compiling
 
